@@ -13,7 +13,7 @@ body{
     color: #DBEDF3;
     text-shadow:  #DA0463 3px 0px 0px;
 }
-.container{
+#container{
     display: flex;
     margin: 8rem 3rem 0rem 3rem;
     justify-content: space-around;
@@ -59,3 +59,97 @@ body{
     font-weight: 900;
     text-shadow: rgb(219, 237, 243) 3px 0px 0px;
 }
+
+.press{
+    box-shadow: 0 3px 4px 0 #dbedf3;
+    opacity: 0.5;
+}
+
+
+/* mediaQuary */
+@media (min-width:1507px ) {
+    #heading{
+        margin-top: 10rem;
+        font-size: 10rem;
+    }
+    #container{
+        display: grid;
+        grid-template-columns:1fr 1fr 1fr 1fr ;
+        justify-content: center;
+        gap: 5rem;
+        margin: 5rem 15rem 0 15rem;
+
+    }
+    .box{
+        height:15rem;
+        width: 15rem;
+        text-align: center;
+        font-size: 9rem;
+       
+    }
+  }
+
+@media (min-width:987px ) and (max-width:1507px) {
+    #heading{
+        margin-top: 7rem;
+        font-size: 8rem;
+    }
+    #container{
+        display: grid;
+        grid-template-columns:1fr 1fr 1fr;
+        justify-content: center;
+        gap: 3rem;
+        margin: 5rem 6rem 0 6rem;
+    }
+    .box{
+        height:13rem;
+        width: 13rem;
+        text-align: center;
+        font-size: 8rem;
+       
+    }
+  }
+
+  @media (min-width:630px ) and (max-width:987px) {
+    #heading{
+        margin: 5rem 2rem 0 2rem;
+        font-size: 6rem;
+    }
+    #container{
+        display: grid;
+        grid-template-columns:1fr 1fr;
+        justify-content: center;
+        gap: 3rem;
+        margin: 5rem 6rem 0 6rem;
+
+    }
+    .box{
+        height:13rem;
+        width: 13rem;
+        text-align: center;
+        font-size: 8rem;
+       
+    }
+  }
+
+  @media (max-width:630px) {
+    #heading{
+        margin: 7rem;
+        font-size: 6rem;
+    }
+    #container{
+        display: grid;
+        grid-template-columns:1fr;
+        justify-content: center;
+        gap: 2rem;
+        margin: 0 10rem 0 10rem;
+
+    }
+    .box{
+        height:15rem;
+        width: 15rem;
+        text-align: center;
+        font-size: 8rem;
+       
+    }
+  }
